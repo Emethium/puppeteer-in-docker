@@ -5,7 +5,7 @@ RUN apk update && apk upgrade && \
     echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories && \
     echo @edge http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories && \
     apk add --no-cache \
-      chromium@edge=~77.0.3865.75 \
+      chromium@edge=~76.0.3809.87 \
       nss@edge \
       freetype@edge \
       freetype-dev@edge \
@@ -16,4 +16,4 @@ RUN apk update && apk upgrade && \
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
 # Puppeteer v1.17.0 works with Chromium 77.
-RUN yarn add puppeteer@1.19.0
+RUN yarn add puppeteer@1.17.0
