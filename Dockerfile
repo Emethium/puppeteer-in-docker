@@ -1,4 +1,4 @@
-FROM node:12.10.0-alpine
+FROM node:12.11.1-alpine
 
 # Installs the latest apline Chromium (77) package
 RUN apk update && apk upgrade && \
