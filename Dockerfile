@@ -1,4 +1,4 @@
-FROM node:13.2.0-alpine
+FROM node:14.10.1-alpine
 
 # Installs the latest alpine Chromium (79) package
 RUN apk update && apk upgrade && \
